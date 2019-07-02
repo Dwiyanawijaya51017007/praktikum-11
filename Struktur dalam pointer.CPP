@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+//Deklarasi struktur
+struct koordinat
+{ int x, y; };
+void ubah_posisi(koordinat *posisi); //prototipe
+void main()
+{
+koordinat posisi; //Definisi variable struktur
+posisi.x = 10;
+posisi.y = 30;
+cout << "Isis semula : x = " << posisi.x
+<< "y = " << posisi.y << endl;
+}
+//Definisi fungsi
+void ubah_posisi(koordinat *posisi)
+{
+(*posisi).x = 100;
+(*posisi).y = 300;
+getch();
+}
